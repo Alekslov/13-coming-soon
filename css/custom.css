@@ -1,1 +1,48 @@
 /* custom CSS */
+/* layout */
+.container.hero {
+    padding-bottom: var(--section-padding);
+}
+
+footer.container {
+    padding-top: 0;
+    padding-bottom: calc(var(--section-padding) * 1.5);
+}
+        footer.container > .row-short {
+            margin-top: var(--section-padding);
+        }
+
+.bg-main-color {
+    background-color: var(--main-color);
+}
+/* hero */
+.hero {
+    text-align: center;
+}
+.hero img {
+    height: 40px;
+    margin-bottom: calc(var(--hero-space) * 2);
+}
+.hero h1 {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: var(--hero-space);
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #000;
+}
+.hero p {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: calc(var(--hero-space) * 3);
+    font-size: 18px;
+    color: #555 ;
+}
+.hero .clock {
+    margin-bottom: calc(var(--hero-space) * 2);
+}
+.hero .form {
+    margin-bottom: var(--hero-space);
+}
+/* main content */
+/* footer */
