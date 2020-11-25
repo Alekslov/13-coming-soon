@@ -45,6 +45,10 @@ footer.container {
 .hero .clock {
     margin-bottom: calc(var(--hero-space) * 2);
 }
+.hero .mouse {
+    margin-top: 20px;
+    margin-left: calc(var(--hero-space) * 2);
+}
 
     
 
