@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/layout.css">
     <!-- 3rd party css -->
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
     <!-- component -->
     <link rel="stylesheet" href="./css/button.css">
     <link rel="stylesheet" href="./css/clock.css">
     <link rel="stylesheet" href="./css/form.css">
     <link rel="stylesheet" href="./css/mouse.css">
-    <link rel="stylesheet" href="./css/progress-bar.css">
+    <link rel="stylesheet" href="../css/progress-bar.css">
     <!-- custom -->
     <link rel="stylesheet" href="./css/custom.css">
 </head>
@@ -28,31 +29,61 @@
                CLOCK
            </div>
            <form class="form">
-               SUBSCRIBE FORM
-           </form>
+                <input type="email" placeholder="Email" required>
+                <!-- <input type="submit" value="Subscribe now!"> -->
+            </form>
+            <div class="btn">Subscribe now!</div>
            <div class="mouse">
-               MOUSE
+                <div class="wheel"></div>
            </div>
        </div>
     </div>
     <main class="container">
         <div class="row">
             <div class="column left">
-                LEFT CONTENT
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor mollitia ullam amet consequatur nihil accusamus labore obcaecati officiis error eligendi.</p>
+                <h2>About startup</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor mollitia ullam amet consequatur nihil accusamus labore, <a href="#">Matrox</a> obcaecati officiis error eligendi.</p>
+                <div class="progress-bar">
+                    PROGRESS BAR
+                </div>
+                <div class="progress-bar">
+                    PROGRESS BAR
+                </div>
+                <div class="progress-bar">
+                    PROGRESS BAR
+                </div>
             </div>
             <div class="column right">
-                RIGHT CONTENT
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam neque mollitia possimus corrupti, sequi vitae et vel. Quaerat, dicta maiores?</p>
+                <h2>Have any question?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam neque mollitia possimus, <a href="mailto:vardenis@pastelis.xyz">vardenis@pastelis.xyz</a> corrupti, sequi vitae et vel. Quaerat, dicta maiores?</p>
+                <form class="form">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <textarea maxlength="10" placeholder="Message"></textarea>
+                    <!-- <input type="submit" value="Send message"> -->
+                    <div class="btn">Send message</div>
+                </form>
             </div>
         </div>
     </main>
     <footer class="container bg-main-color">
         <div class="row">
-            SOCIAL
+            <a href="#" target="_blank" class="fa fa-facebook" aria-hidden="true"></a>
+            <a href="#" target="_blank" class="fa fa-twitter" aria-hidden="true"></a>
+            <a href="#" target="_blank" class="fa fa-dribbble" aria-hidden="true"></a>
+            <a href="#" target="_blank" class="fa fa-tumblr" aria-hidden="true"></a>
+            <a href="#" target="_blank" class="fa fa-linkedin" aria-hidden="true"></a>
+            <a href="#" target="_blank" class="fa fa-instagram" aria-hidden="true"></a>
+            <a href="#" target="_blank" class="fa fa-rss" aria-hidden="true"></a>
         </div>
         <div class="row-short">
-            BOTTOM TEXTS
+            <img src="./img/logo-footer.png" alt="logo-footer">
+            <div class="text-trio">
+                <div class="text">Copyright &copy; 2020 <a href="#">Matrox</a></div>
+                <div class="text">All rights reserved</div>
+                <div class="text">Designed by <a href="#">TrendyTheme</a></div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias <a href="#">200+</a> quia consequuntur distinctio libero qui atque incidunt <a href="#">Matrox</a> saepe nemo.</p>
         </div>
     </footer>
     <script src="./js/main.js" type="module"></script>
