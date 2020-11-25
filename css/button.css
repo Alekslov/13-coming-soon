@@ -1,6 +1,7 @@
 .btn {
     display: inline-block;
-    float: left;
+    /* float: left; */
+    margin-left: calc(var(--main-space) * 2);
     padding: 10px 30px;
     background-color: var(--secondary-color);
     opacity: 0.9;
