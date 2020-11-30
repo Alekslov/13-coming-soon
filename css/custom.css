@@ -45,12 +45,28 @@ footer.container {
 .hero .clock {
     margin-bottom: calc(var(--hero-space) * 2);
 }
+.hero .form {
+    margin-bottom: var(--hero-space);
+    width: 90%;
+}
+.hero .form > input {
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    border-bottom-color: white;
+}
+.hero .form > input::placeholder {
+    width: 100%;
+    color: white;
+}
+.hero .form > .btn {
+    float: none;
+}
 .hero .mouse {
     margin-top: 20px;
     margin-left: calc(var(--hero-space) * 2);
 }
-
-    
+   
 
 /* main content */
 main h2 {

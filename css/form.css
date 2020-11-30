@@ -6,7 +6,7 @@
 .form > input {
     display: inline-block;
     float: left;
-    width: 100%;
+    width: 45%;
     margin-bottom: 30px;
     font-size: 18px;
     line-height: 36px;
