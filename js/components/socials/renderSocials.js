@@ -1,30 +1,30 @@
-import { isInputValidation } from "./isInputValidation.js";
+import { isInputValid } from "./isInputValid.js";
+import { isValidSocialItem } from './isValidSocialItem.js';
 
-function renderSocials(data) {
-    if (!isInputValidation(data)) {
+
+function renderSocials(selector, data) {
+    if (!isInputValid(selector, data)) {
         return false;
     }
-let HTML = '';
-const socialsDOM = document.querySelector('footer > .row');
-
+    const socialsDOM = document.querySelector(selector);
+    if (!socialsDOM) {
+        console.error('ERROR: nerasta turinio generavimo vieta');
+        return false; 
+    }
+    let HTML = '';
 for (let i = 0; i < data.length; i++) {
     const item = data[i];
-    if (typeof item !== 'object') {
+    if (!isValidSocialItem(item)) {
         continue;
     }
-    if (typeof item.link !== 'string' || item.link === '') {
-        continue;
-    }
-    if (typeof item.icon !== 'string' || item.icon === '') {
-        continue;        
-    }
-    HTML +=  `<a href="${item.link}" target="_blank" class="fa fa-${item.icon}" aria-hidden="true"></a>`;
+    HTML += `<a href="${item.link}" target="_blank" class="fa fa-${item.icon}" aria-hidden="true"></a>`;
 }
     if (HTML === '') {
         console.error('ERROR: nepavyko sugeneruoti social ikonu/nuorodu.');
         return false;
     }
 
-    socialsDOM.innerHTML = HTML;
+    socialsDOM.innerHTML += HTML;
+    return true;
 }
 export { renderSocials }
