@@ -27,9 +27,25 @@
         height: 6px;
         background-color: #ccc;
         }
-        .progress-bar > .bottom > .bar{
+        .progress-bar > .bottom > .bar {
             display: inline-block;
             width: 80%;
             height: 100%;
-            background-color: var(--main-color);
             }
+            .progress-bar > .bottom > .bar > .loader {
+                display: inline-block;
+                width: 0;
+                height: 100%;
+                background-color: var(--main-color);
+            }
+            .progress-bar.animate > .bottom > .bar > .loader {
+            animation: loading 2s forwards;
+            }
+    @keyframes loading {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 100%;
+        }
+    }
