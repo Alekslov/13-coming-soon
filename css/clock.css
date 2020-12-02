@@ -2,28 +2,28 @@
     display: inline-block;
     width: 100%;
 }
-.clock .time-box {
+.clock .time {
     display: inline-block;
     float: left;
     width: 25%;
     text-transform: uppercase;
     color: #fff;
 }
-.clock .time-box > .time {
+.clock .time > .time {
     font-size: 50px;
 }
 
-@media (max-width: 700px){
-    .clock .time-box {
+@media (max-width: 700px) {
+    .clock .time {
         width: 50%;
         margin-bottom: var(--hero-space);
     }
-    .clock .time-box > .time {
+    .clock .time > .time {
         margin: 0;
     }
 }
-@media (max-width: 300px){
-    .clock .time-box {
+@media (max-width: 300px) {
+    .clock .time {
         width: 100%;
     }
 } 
