@@ -20,9 +20,35 @@ footer.container {
     background-color: var(--main-color);
 }
 /* hero */
+/* custom CSS - everything else, that wasn't styled with components css */
+
+/* layout */
+.container.hero {
+    padding-bottom: var(--section-padding);
+    background-image: url(../img/hero-image.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+footer.container {
+    padding-top: 0;
+    padding-bottom: calc(var(--section-padding) * 1.5);
+}
+    footer.container > .row-short {
+        margin-top: var(--section-padding);
+    }
+
+.bg-main-color {
+    background-color: var(--main-color);
+}
+
+/* hero */
 .hero {
     text-align: center;
 }
+
 .hero img {
     height: 40px;
     margin-bottom: calc(var(--hero-space) * 2);
@@ -40,33 +66,27 @@ footer.container {
     width: 100%;
     margin-bottom: calc(var(--hero-space) * 3);
     font-size: 18px;
-    color: #555 ;
+    color: var(--grey-color);
 }
 .hero .clock {
     margin-bottom: calc(var(--hero-space) * 2);
 }
 .hero .form {
-    margin-bottom: var(--hero-space);
     width: 90%;
+    margin: 0 5% var(--hero-space);
 }
-.hero .form > input {
-    width: 100%;
-    color: white;
-    background-color: transparent;
-    border-bottom-color: white;
-}
-.hero .form > input::placeholder {
-    width: 100%;
-    color: white;
-}
-.hero .form > .btn {
-    float: none;
-}
-.hero .mouse {
-    margin-top: 20px;
-    margin-left: calc(var(--hero-space) * 2);
-}
-   
+    .hero .form > input {
+        width: 100%;
+        color: #fff;
+        background-color: transparent;
+        border-bottom-color: #fff;
+    }
+        .hero .form > input::placeholder {
+            color: #fff;
+        }
+    .hero .form > .btn {
+        float: none;
+    }
 
 /* main content */
 main h2 {
@@ -85,13 +105,15 @@ main p {
     line-height: 26px;
     color: var(--grey-color);
 }
-main p > a {
-    color: var(--secondary-color);
-    text-decoration-line: none;
-}
+    main p > a {
+        color: var(--secondary-color);
+        text-decoration-line: none;
+    }
+
 main .form > .btn {
     float: right;
 }
+
 /* footer */
 footer {
     text-align: center;
@@ -118,38 +140,38 @@ footer {
         border-radius: 50%;
         transition: all 0.5s;
     }
-    footer .social.fa:hover {
-        background-color: #fff;
-        color: var(--main-color);
-     }
-     footer .btn.circle {
+        footer .social.fa:hover {
+            background-color: #fff;
+            color: var(--main-color);
+        }
+    footer .btn.circle {
         position: absolute;
         top: -24px;
         right: -13px;
-     }
-     footer .text-trio {
+    }
+    footer .text-trio {
         display: inline-block;
         width: 100%;
-     }
-     footer .text-trio > .text {
-        display: inline-block;
-        padding: 0 10px;
-        position: relative;
     }
-    footer .text-trio > .text::before {
-        display: inline-block;
-        content: '';
-        width: 1px;
-        height: 14px;
-        background-color: #fff;
-        position: absolute;
-        top: 50%;
-        left: -2px;
-        transform: translateY(-50%);
-    }
-    footer .text-trio > .text:first-of-type::before {
-        display: none;
-    }
+        footer .text-trio > .text {
+            display: inline-block;
+            padding: 0 10px;
+            position: relative;
+        }
+            footer .text-trio > .text::before {
+                display: inline-block;
+                content: '';
+                width: 1px;
+                height: 14px;
+                background-color: #fff;
+                position: absolute;
+                top: 50%;
+                left: -2px;
+                transform: translateY(-50%);
+            }
+            footer .text-trio > .text:first-of-type::before {
+                display: none;
+            }
     footer p {
         display: inline-block;
         width: 100%;
@@ -158,13 +180,13 @@ footer {
         color: #fff;
         text-decoration: none;
     }
-    @media (max-width: 700px) {
-        footer .text-trio > .text {
-            width: 100%;
-            padding: 0;
-        }
-            footer .text-trio > .text::before {
-                display: none;
-            }
-    }
 
+@media (max-width: 700px) {
+    footer .text-trio > .text {
+        width: 100%;
+        padding: 0;
+    }
+        footer .text-trio > .text::before {
+            display: none;
+        }
+}
