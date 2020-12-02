@@ -22,7 +22,7 @@ for (let i = 0; i < data.length; i++) {
     if (!isValidSocialItem(item)) {
         continue;
     }
-    HTML += `<a href="${item.link}" target="_blank" class="fa fa-${item.icon}" aria-hidden="true"></a>`;
+    HTML += `<a href="${item.link}" target="_blank" class="social fa fa-${item.icon}" aria-hidden="true"></a>`;
 }
     if (HTML === '') {
         console.error('ERROR: nepavyko sugeneruoti social ikonu/nuorodu.');
